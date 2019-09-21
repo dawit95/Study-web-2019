@@ -7,6 +7,6 @@
 - [ ] 댓글
 
 ## 구현 페이지
-- [ ] home => List, search, 등록 버튼
-- [ ] add post
+- [ ] home => List, Search, AddPostButton
+- [ ] add post => submit
 - [ ] post detail => modify, delete, comment
