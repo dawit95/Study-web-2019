@@ -11,6 +11,9 @@ const handleListening = () => {
     console.log(`Listening on: http://localhost:${PORT}`);
 }
 
+// Use Pug
+app.set("view engine", "pug");
+
 // routers
 app.use(routes.home, globalRouter);
 app.use(routes.posts, postRouter);
