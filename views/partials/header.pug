@@ -1,0 +1,6 @@
+header.header
+    .header_column
+        a(href=routes.home) Home
+    .header_column
+        form(action=routes.search, method="get")
+            input(type="text", placeholder="Search by ...", name="term")

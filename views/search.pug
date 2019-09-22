@@ -1,0 +1,15 @@
+extends layouts/main
+include mixins/postBlock
+
+block content
+    h1=`Searching by ${searchingBy}`
+    
+    .table
+        table.table_post
+            tr
+                th 번호
+                th 제목
+                th 작성일
+                th 조회수
+            each post in posts
+                +postBlock(post)

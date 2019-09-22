@@ -1,0 +1,9 @@
+extends layouts/main
+
+block content
+    .form_container
+        form(action=`/posts${routes.postAdd}`, method="post")
+            input(type="text", name="title", placeholder="Post Title", required=true)
+            textarea(name="content", placeholder="content", required=true)
+            input(type="submit", value="Create Post")
+        

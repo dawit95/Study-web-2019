@@ -1,0 +1,7 @@
+mixin postBlock(post = {})
+    tr
+        th=post.no
+        th
+            a(href=routes.postDetail(post.id)) #{post.title}
+        th=post.date
+        th=post.views
