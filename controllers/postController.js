@@ -1,15 +1,21 @@
-export const posts = (req,res) => {
-    console.log("posts!");
-}
+import routes from "../routes";
+
 export const postDetail = (req,res) => {
-    console.log("postDetail success!");
+    res.render("postDetail", { pageTitle: "Post Detail" });
 }
-export const postAdd = (req,res) => {
-    console.log("postAdd success!");
+
+export const getPostAdd = (req,res) => {
+    res.render("add", { pageTitle: "Add Post" });
 }
+export const postPostAdd = (req, res) => {
+    // TO DO
+    // INSERT POST INTO DATEBASE
+    res.send("postPostAdd");
+}
+
 export const postEdit = (req,res) => {
-    console.log("postEdit success!");
+    res.render("editPost", { pageTitle: "Edit Post" });
 }
 export const postDelete = (req,res) => {
-    console.log("postDelete success!");
+    res.render("deletePost", { pageTitle: "Delete Post" });
 }

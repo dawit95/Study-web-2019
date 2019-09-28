@@ -16,7 +16,14 @@ const routes = {
 
     // Board Posts
     posts: POSTS,
-    postDetail: POST_DETAIL,
+    postDetail: id => {
+        if (id) {
+            return `/posts/${id}`;
+        }
+        else {
+            return POST_DETAIL;
+        }
+    },
     postAdd: ADD_POST,
     postEdit: EDIT_POST,
     postDelete: DELETE_POST

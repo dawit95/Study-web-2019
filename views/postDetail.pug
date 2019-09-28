@@ -1,0 +1,13 @@
+extends layouts/main
+
+block content
+    .post__info
+        h5.post__title Title
+        p.post__content Contents
+    .post__comments
+        p.post_comment 0 Comments
+    .post__options
+        li
+            a(href=routes.postEdit) Edit Post
+        li 
+            a(href=routes.postDelete) Delete Post

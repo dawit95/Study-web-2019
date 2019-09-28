@@ -1,0 +1,16 @@
+extends layouts/main
+include mixins/postBlock
+
+block content
+    .table
+        table.table_post
+            tr
+                th 번호
+                th 제목
+                th 작성일
+                th 조회수
+            each post in posts
+                +postBlock(post)
+    .home_column
+        a(href=`/posts${routes.postAdd}`) 글 작성
+            
