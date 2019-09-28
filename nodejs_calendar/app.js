@@ -5,7 +5,6 @@ import postRouter from "./routers/postRouter";
 
 const app = express();
 
-// routers
 app.use(routes.home, globalRouter);
 app.use(routes.posts, postRouter);
 

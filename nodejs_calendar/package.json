@@ -1,6 +1,7 @@
 {
   "name": "nodejs_calendar",
   "version": "1.0.0",
+
   "description": "\"#nodejs_calendar\"",
   "main": "app.js",
   "scripts": {
@@ -15,5 +16,6 @@
     "@babel/preset-env": "^7.6.2",
     "express": "^4.17.1",
     "nodemon": "^1.19.2"
+
   }
 }
