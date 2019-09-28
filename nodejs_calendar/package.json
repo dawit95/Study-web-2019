@@ -1,0 +1,19 @@
+{
+  "name": "nodejs_calendar",
+  "version": "1.0.0",
+  "description": "\"#nodejs_calendar\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node init.js --delay 2"
+  },
+  "author": "we",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2"
+  }
+}
